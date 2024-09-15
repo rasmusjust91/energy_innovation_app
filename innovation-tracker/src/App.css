@@ -1,0 +1,261 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F2F6F9; /* Light background */
+  color: #333;
+}
+
+.app-container {
+  text-align: center;
+}
+
+header {
+  background-color: #0072CE; /* Ørsted Blue */
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.forms-section, .ideas-section {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #00A0E3; /* Ørsted Light Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0072CE; /* Darker blue on hover */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+footer {
+  margin-top: 20px;
+  color: #FDB913; /* Ørsted Yellow */
+}
+
+.idea-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.idea-form label {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.idea-form input, .idea-form textarea, .idea-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.idea-form button {
+  padding: 10px;
+  background-color: #0072CE; /* Ørsted's blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.idea-form button:hover {
+  background-color: #005ea0; /* Darker Ørsted blue */
+}
+
+.idea-list {
+  max-width: 100%;
+  margin: 20px;
+}
+
+.scrollable-idea-list {
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.scrollable-idea-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.scrollable-idea-list li {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  position: relative; /* For positioning the dropdown and category box */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content */
+  min-height: 150px; /* Ensure consistent height for the idea box */
+}
+
+.idea-content {
+  flex-grow: 1;
+  text-align: left; /* Ensure text is aligned to the left */
+}
+
+.idea-title {
+  font-size: 1.2em;
+  color: #0072CE; /* Ørsted's blue color */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align title to the left */
+}
+
+.idea-description {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+  text-align: left; /* Align description to the left */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Align footer and category box to opposite sides */
+  align-items: center; /* Vertically align items */
+  width: 100%;
+}
+
+.status-dropdown {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  width: 120px;
+  position: absolute; /* Position the dropdown */
+  top: 10px; /* Align to the top */
+  right: 10px; /* Align to the right */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.status-dropdown option {
+  color: black; /* Ensure options are readable */
+}
+
+.category-box {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85em;
+  color: #333;
+  font-weight: bold;
+  background-color: #FFDDC1; /* Default color */
+}
+
+.comment-form {
+  margin-top: 10px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.comment-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #45a049;
+}
+
+.comments-section {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.comments-section h3 {
+  margin-bottom: 10px;
+}
+
+.comment-item {
+  margin-bottom: 5px; /* Small spacing between comments */
+  background-color: #f7f7f7; /* Light gray background for the comment */
+  padding: 2px; /* Padding for inside the comment box */
+  border-radius: 4px; /* Slightly rounded corners */
+  border: 1px solid #ddd; /* Subtle border */
+}
+
+
+/* Style for the comment content */
+.comment-content {
+  background: none; /* No background for inner content */
+  padding: 0; /* No padding for inner content */
+  border: none; /* No border for inner content */
+}
+
+/* Adjust footer styling */
+.comment-footer {
+  font-size: 0.85rem; /* Smaller footer text */
+  color: #555;
+  text-align: right; /* Right-align author and date */
+  margin-top: 5px;
+}
+
+.comments-toggle {
+  cursor: pointer;
+  color: #323638; /* Ørsted Blue */
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.comments-toggle:hover {
+  text-decoration: underline;
+}
