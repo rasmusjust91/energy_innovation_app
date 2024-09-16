@@ -114,3 +114,4 @@ If pytest is not locally installed, do so by either running ```pip install -r re
 5. Create delete idea end point that deletes idea and corresponding comments
 6. Make it possible to delete the idea and comments from the frontend, if the delete idea and delete comment endpoints are implemented
 7. Add put endpoints for editing category, title, description, as well as  comments
+8. Split app.css in frontend into seperate files for different components
