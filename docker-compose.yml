@@ -9,7 +9,7 @@ services:
 
   frontend:
     build:
-      context: ./innovation-tracker
+      context: ./frontend
     container_name: react_frontend
     ports:
       - "3000:3000"
