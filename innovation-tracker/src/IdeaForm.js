@@ -4,7 +4,7 @@ import axios from 'axios';
 const IdeaForm = ({ onIdeaSubmitted }) => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [category, setCategory] = useState('solar'); // Default category
+    const [category, setCategory] = useState('Solar'); // Default category
     const [submitter, setSubmitter] = useState('');
     const [notification, setNotification] = useState(null); // State for notification
 
@@ -22,7 +22,7 @@ const IdeaForm = ({ onIdeaSubmitted }) => {
             setNotification({ type: 'success', message: 'Idea has been successfully submitted!' });
             setTitle('');
             setDescription('');
-            setCategory('solar');
+            setCategory('Solar');
             setSubmitter('');
         } catch (error) {
             console.error('Error submitting idea:', error);

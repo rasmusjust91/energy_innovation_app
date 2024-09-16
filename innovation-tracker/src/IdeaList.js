@@ -102,12 +102,16 @@ const IdeaList = ({ newIdea }) => {
 
     const getCategoryColor = (category) => {
         switch (category) {
-            case 'solar':
+            case 'Solar':
                 return '#FFDDC1';
-            case 'wind':
+            case 'Wind':
                 return '#C2E2F7';
-            case 'energy storage':
+            case 'Energy Storage':
                 return '#D1F7D6';
+            case 'Power to X':
+                return '#AAA7D6';
+            case 'IT':
+                return '#B3F7E6';
             default:
                 return '#F3F4F6';
         }
